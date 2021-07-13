@@ -10,15 +10,5 @@ class SecondActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val person = intent.getSerializableExtra("EXTRA_PERSON") as Person // cast this as Person
-
-        val name = person.name.toString()
-
-        tvPerson.text = name
-
-        btnGoBack.setOnClickListener {
-            // Goes back, clears the activity stack
-            finish()
-        }
     }
 }
